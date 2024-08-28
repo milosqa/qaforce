@@ -8,7 +8,6 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -16,5 +15,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
+          github_token: ${{ secrets.MY_PERSONAL_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: ./ 
+          publish_dir: ./  # Root directory where your static files are located
+
