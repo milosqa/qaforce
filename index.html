@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Document Title -->
-    <title>Templates Bootstrap Template</title>
+    <title>My Static Page</title>
 
     <!-- Fav Icon -->
     <link rel="icon" type="image/png" href="https://bootstrapbrain.com/demo/assets/images/favicon.png">
@@ -21,110 +21,49 @@
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="./Templates Bootstrap Template_files/switcher.css" type="text/css" media="all">
-    <style id="smooth-scrollbar-style">
-        [data-scrollbar] {
-            display: block;
-            position: relative;
-        }
-
-        .scroll-content {
-            -webkit-transform: translate3d(0, 0, 0);
-                    transform: translate3d(0, 0, 0);
-        }
-
-        .scrollbar-track {
-            position: absolute;
-            opacity: 0;
-            z-index: 1;
-            background: rgba(222, 222, 222, .75);
-            -webkit-user-select: none;
-               -moz-user-select: none;
-                -ms-user-select: none;
-                    user-select: none;
-            -webkit-transition: opacity 0.5s 0.5s ease-out;
-                    transition: opacity 0.5s 0.5s ease-out;
-        }
-        .scrollbar-track.show,
-        .scrollbar-track:hover {
-            opacity: 1;
-            -webkit-transition-delay: 0s;
-                    transition-delay: 0s;
-        }
-
-        .scrollbar-track-x {
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 8px;
-        }
-        .scrollbar-track-y {
-            top: 0;
-            right: 0;
-            width: 8px;
-            height: 100%;
-        }
-        .scrollbar-thumb {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 8px;
-            height: 8px;
-            background: rgba(0, 0, 0, .5);
-            border-radius: 4px;
-        }
-    </style>
 </head>
 
-<body class="home blog">
-    <div class="site-wrapper">
-        <!-- Removed the switcher-container section -->
-        <section class="device-wrapper">
-            <div class="device-container">
-                <div class="device-block">
-                    <div class="device-frame">
-                        <iframe src="./Templates Bootstrap Template_files/saved_resource.html"></iframe>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Home</h1>
+        <p>Welcome to our website!</p>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <p>Details about our services.</p>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>Information about us.</p>
+    </section>
+
+    <section id="pricing">
+        <h2>Pricing</h2>
+        <p>Details on pricing and packages.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>How to get in touch with us.</p>
+    </section>
+
     <!-- Javascript Files -->
     <script src="./Templates Bootstrap Template_files/jquery.min.js.download"></script>
     <script src="./Templates Bootstrap Template_files/smooth-scrollbar.js.download"></script>
     <script src="./Templates Bootstrap Template_files/switcher.js.download"></script>
-    <script>
-        (function(){
-            function c(){
-                var b = a.contentDocument || a.contentWindow.document;
-                if(b){
-                    var d = b.createElement('script');
-                    d.innerHTML = "window.__CF$cv$params={r:'8ba0249d19d65a48',t:'MTcyNDgwNDUwNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
-                    b.getElementsByTagName('head')[0].appendChild(d);
-                }
-            }
-            if(document.body){
-                var a = document.createElement('iframe');
-                a.height = 1;
-                a.width = 1;
-                a.style.position = 'absolute';
-                a.style.top = 0;
-                a.style.left = 0;
-                a.style.border = 'none';
-                a.style.visibility = 'hidden';
-                document.body.appendChild(a);
-                if('loading' !== document.readyState) c();
-                else if(window.addEventListener) document.addEventListener('DOMContentLoaded', c);
-                else {
-                    var e = document.onreadystatechange || function(){};
-                    document.onreadystatechange = function(b){
-                        e(b);
-                        'loading' !== document.readyState && (document.onreadystatechange = e, c());
-                    }
-                }
-            }
-        })();
-    </script>
-    <iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" src="./Templates Bootstrap Template_files/saved_resource(1).html"></iframe>
-    <script defer="" src="./Templates Bootstrap Template_files/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;8ba0249d19d65a48&quot;,&quot;version&quot;:&quot;2024.8.0&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;ad78a4c392ab4a12925f35a72e46b09a&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfL4&quot;:true}}}" crossorigin="anonymous"></script>
 </body>
 </html>
