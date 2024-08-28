@@ -3,7 +3,7 @@ name: Deploy static site to GitHub Pages
 on:
   push:
     branches:
-      - main  # Change this to your default branch if different
+      - main  # Set this to your default branch if it's different
 
 jobs:
   deploy:
@@ -13,10 +13,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up GitHub Pages
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          deploy_key: ${{ secrets.GITHUB_DEPLOY_KEY }}
-          external_repository: ${{ github.repository }}
           publish_branch: gh-pages
-          publish_dir: ./
+          publish_dir: ./ 
